@@ -21,27 +21,23 @@ public class PhraseOMatic {
 				"trainspotting"};
 		
 		// find out how many words are in each list
-		// TODO: MOVE TO ITS OWN METHOD
+		// DONE: MOVE TO ITS OWN METHOD
 //		int oneLen = wordListOne.length;
 //		int twoLen = wordListTwo.length;
 //		int threeLen = wordListThree.length;
 		
 		// generate three rand numbers
-		// TODO: MOVE TO ITS OWN METHOD
+		// DONE: MOVE TO ITS OWN METHOD
 //		int rand1 = (int) (Math.random() * oneLen);
 //		int rand2 = (int) (Math.random() * twoLen);
 //		int rand3 = (int) (Math.random() * threeLen);
-
-//		int rand1 = genRand(wordListOne);
-//		int rand2 = genRand(wordListTwo);
-//		int rand3 = genRand(wordListThree);
 		
 		// now build a phrase
-		// TODO: MOVE TO ITS OWN METHOD
+		// DONE: MOVE TO ITS OWN METHOD
 //		String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
 		
 		// print out the phrase
-		// TODO: MOVE TO ITS OWN METHOD
+		// DONE: MOVE TO ITS OWN METHOD
 //		System.out.println("What we need is a " + phrase);
 		
 		genPhrase(wordListOne,wordListTwo,wordListThree);
@@ -51,7 +47,7 @@ public class PhraseOMatic {
 			String anotherString = input.nextLine();
 			if ("Y".equals(anotherString.substring(0, 1).toUpperCase())) {
 				another = true;
-				// TODO: CALL THE METHOD THAT CONTAINS THE SHIT ABOVE
+				// DONE: CALL THE METHOD THAT CONTAINS THE SHIT ABOVE
 				genPhrase(wordListOne, wordListTwo, wordListThree);
 				
 			} else {
@@ -61,11 +57,11 @@ public class PhraseOMatic {
 		}
 	}
 	
-	public static int genRand(String[] wordList) {
+	private static int genRand(String[] wordList) {
 		return (int) (Math.random() * wordList.length);
 	}
 	
-	public static void genPhrase(String[] wordListOne, String[] wordListTwo, String[] wordListThree) {
+	private static void genPhrase(String[] wordListOne, String[] wordListTwo, String[] wordListThree) {
 		int rand1 = genRand(wordListOne);
 		int rand2 = genRand(wordListTwo);
 		int rand3 = genRand(wordListThree);
