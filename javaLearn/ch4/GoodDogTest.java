@@ -1,0 +1,19 @@
+package ch4;
+
+/**
+ * Created by Frank Borges XPTHQ on 1/17/2019.
+ */
+public class GoodDogTest {
+	public static void main(String[] args) {
+		GoodDog one = new GoodDog();
+		one.setSize(70);
+		
+		GoodDog two = new GoodDog();
+		two.setSize(8);
+		System.out.println("Dog one: " + one.getSize());
+		System.out.println("Dog two: " + two.getSize());
+		
+		one.bark();
+		two.bark();
+	}
+}
